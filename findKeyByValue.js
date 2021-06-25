@@ -7,7 +7,6 @@ const assertEqual = function(actual, expected) {
   }
 
 };
-
 const findKeyByValue = function(obj,val) {
   let  array1 = '';
   array1 = (Object.keys(obj));
@@ -18,7 +17,6 @@ const findKeyByValue = function(obj,val) {
     }
     //console.log("value not found");
   }
-  
 };
 const bestTVShowsByGenre = { 
   "sci_fi": "The Expanse",
