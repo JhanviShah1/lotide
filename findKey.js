@@ -5,13 +5,10 @@ const findKey = function(obj,callback) {
   array1 = (Object.keys(obj));
   for (let item of array1) {
     if (callback(obj[item]) && foundFirst === false) {
-      //console.log("here");
       result = item;
-    } else if (callback(obj[item])) {
       foundFirst = true;
     }
   }
-  
   return result;
 };
 

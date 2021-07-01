@@ -16,13 +16,14 @@ const eqArrays = function(arr1,arr2) {
   }
   return true;
 };
-const assertArraysEqual = function(a1,a2){
-  if(eqArrays(a1,a2)){
-  console.log(`Assertion Passed: ${a1} === ${a2}`);
-  }
-  else {
+const assertArraysEqual = function(a1,a2) {
+  if (eqArrays(a1,a2)) {
+    console.log(`Assertion Passed: ${a1} === ${a2}`);
+  }  else {
     console.log(`Assertion failed: ${a1} !== ${a2}`);
   }
 };
-assertArraysEqual([1,3,4],[5,6,9]);
-assertArraysEqual([1,3,4],[1,3,4]);
+//assertArraysEqual([1,3,4],[5,6,9]);
+//assertArraysEqual([1,3,4],[1,3,4]);
+
+module.exports = assertArraysEqual;
